@@ -1,0 +1,30 @@
+{
+  "name": "kidprenuer",
+  "version": "0.1.0",
+  "description": "Internal package for Gadget app kidprenuer (Development environment)",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "NODE_ENV=production vite build"
+  },
+  "dependencies": {
+    "@gadget-client/kidprenuer": "link:.gadget/client",
+    "@gadgetinc/react": "^0.18.2",
+    "gadget-server": "link:.gadget/server",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6.15.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.0.0",
+    "react-icons": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "3.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.5"
+  }
+}

@@ -1,0 +1,132 @@
+/* General Form Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Custom Form Styles */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Title */
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Input Styles */
+.custom-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Google OAuth Button */
+.google-oauth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.google-oauth-button img {
+  margin-right: 10px;
+}
+
+.google-oauth-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Error and Success Messages */
+.format-message {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.success {
+  color: #28a745;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-form {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .custom-input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
